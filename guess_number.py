@@ -1,7 +1,7 @@
-# Test 000 Python - Beginners
+# Python - Beginners
 # Guess the number game between 1 & 10
 # Author: jdev
-# Version 0.2
+# Version 0.3
 
 from random import Random, randint, random
 
@@ -10,7 +10,7 @@ num = 0
 cont = 0
 
 # Choosing difficulty
-print("Hello! Welcome to Guess the number v0.2")
+print("Hello! Welcome to Guess the number v0.3")
 print("Please, choose a difficulty:")
 print("\t1. Easy (1 - 10)")
 print("\t2. Medium (1 - 100)")
@@ -29,7 +29,7 @@ elif int(diff) == 2:
     while int(num) != int(gnum):
         num = input("Guess the number: ")
         cont += 1
-if int(diff) == 3:
+elif int(diff) == 3:
     gnum = randint(1, 1000)
     while int(num) != int(gnum):
         num = input("Guess the number: ")
