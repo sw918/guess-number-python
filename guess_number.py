@@ -15,6 +15,7 @@ print("Please, choose a difficulty:")
 print("\t1. Easy (1 - 10)")
 print("\t2. Medium (1 - 100)")
 print("\t3. Hard (1 - 1000)")
+print("\t4. Custom (X - Y)")
 diff = input("> ")
 print()
 
@@ -31,6 +32,15 @@ elif int(diff) == 2:
         cont += 1
 elif int(diff) == 3:
     gnum = randint(1, 1000)
+    while int(num) != int(gnum):
+        num = input("Guess the number: ")
+        cont += 1
+        cont += 1
+elif int(diff) == 4:
+    gnum1 = input("Type the minimum number: ")
+    gnum2 = input("Type the maximum number: ")
+    gnum = randint(int(gnum1), int(gnum2))
+    print()
     while int(num) != int(gnum):
         num = input("Guess the number: ")
         cont += 1
